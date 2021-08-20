@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "heroescluster-3a93"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "heroescluster-3a93"
+  template:
+    metadata:
+      labels:
+        app: "heroescluster-3a93"
+    spec:
+      containers:
+        - name: "heroescluster-3a93"
+          image: "heroes.azurecr.io/heroescluster"
+          ports:
+          - containerPort: 3978
