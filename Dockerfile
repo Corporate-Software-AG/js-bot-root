@@ -5,7 +5,7 @@ ENV MicrosoftAppPassword=gh9q_KywhIQ7U55gI_88.zA99xz_.abFLk
 ENV SkillHostEndpoint=/api/skills/
 ENV SkillId=DialogSkillBot
 ENV SkillAppId=
-ENV SkillEndpoint=testskill/api/messages
+ENV SkillEndpoint=10.0.205.107:39783/api/messages
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --production --silent && mv node_modules ../
