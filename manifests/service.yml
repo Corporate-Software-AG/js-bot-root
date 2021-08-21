@@ -5,9 +5,8 @@ metadata:
     labels:
         app: "rootbot"
 spec:
-    type: LoadBalancer
     ports:
-    - port: 443
+    - port: 3978
       targetPort: 3978
       protocol: TCP
       name: http
